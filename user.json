@@ -1,0 +1,21 @@
+{
+	"id": 1,
+	"username": "Timespace",
+	"items": {
+		"1": {
+			"want": true,
+			"have": false,
+			"catalogue": false
+		},
+		"2": {
+			"want": false,
+			"have": true,
+			"catalogue": true,
+		},
+		"3": {
+			"want": false,
+			"have": false,
+			"catalogue": true
+		}
+	}
+}

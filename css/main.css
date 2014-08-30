@@ -1,0 +1,108 @@
+/**************************************
+GENERAL
+**************************************/
+
+body, header, section, footer, div, table, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+
+/**************************************
+HEADER
+**************************************/
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 20px 0;
+    text-align: center;
+    border-width: 0 5px 10px 5px;
+    border-style: solid;
+    border-bottom-left-radius: 130% 170%;
+    border-bottom-right-radius: 130% 170%;
+}
+
+h1 {
+    font-family: 'Coustard', serif;
+    padding: 5px 0 15px 0;
+}
+
+
+
+/**************************************
+TABLE
+**************************************/
+
+table {
+    width: 100%;
+    border-radius: 10px;
+}
+
+thead th {
+    border-radius: 10px;
+}
+
+
+
+/**************************************
+FOOTER
+**************************************/
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    border-top-left-radius: 130% 170%;
+    border-top-right-radius: 130% 170%;
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+    font-size: 0.75em;
+}
+
+
+
+/**************************************
+COLOURS
+**************************************/
+/* http://paletton.com/#uid=51-0S0kllllaFw0g0qFqFg0w0aF */
+
+/* "Wooden" header */
+header {
+    background: #805215;
+    border-color: #553100;
+}
+
+/* Logo text */
+h1 {
+    color: #d4c86a;
+}
+
+table {
+    background: #749D34;
+    color: #2F4E00;
+}
+
+thead {
+    background: #4F7514;
+    color: #CCEB9D;
+}
+
+/* copyright footer */
+footer {
+    background: #ddd;
+    color: #aaa;
+}
