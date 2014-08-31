@@ -7,6 +7,7 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Coustard" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-route.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
     <body>
@@ -26,26 +27,7 @@
             </nav>
         </header>
         <section>
-            <div id="wrapper">
-                <table data-ng-controller="ItemTableCtrl">
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col"><span class="fa fa-heart"></span> Want</th>
-                            <th scope="col"><span class="fa fa-refresh"></span> Have</th>
-                            <th scope="col"><span class="fa fa-book"></span> Catalogue</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr data-ng-repeat="item in items">
-                            <th scope="row">{{item.name}}</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>No</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div id="wrapper" ng-view></div>
         </section>
         <footer>
             <p>Copyright &copy; 2014 Maria Chapman.</p>

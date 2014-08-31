@@ -1,5 +1,19 @@
 (function() {
-    var animalforexApp = angular.module('animalforexApp', []);
+    var animalforexApp = angular.module('animalforexApp', ['ngRoute']);
+
+    animalforexApp.config(function($routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'pages/home.html'
+            })
+            .when('/list', {
+                templateUrl: 'pages/list.html',
+                controller: 'ItemTableCtrl'
+            })
+            .when('/offers', {
+                templateUrl: 'pages/offers.html'
+            });
+    });
 
     animalforexApp.controller('ItemTableCtrl', ['$scope', function($scope) {
         $scope.items = [{
