@@ -1,7 +1,7 @@
 (function() {
     var animalforexApp = angular.module('animalforexApp', ['ngRoute']);
 
-    animalforexApp.config(function($routeProvider) {
+    animalforexApp.config(function($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'pages/home.html'
@@ -13,6 +13,8 @@
             .when('/offers', {
                 templateUrl: 'pages/offers.html'
             });
+
+        $locationProvider.html5Mode(true);
     });
 
     animalforexApp.controller('ItemTableCtrl', ['$scope', function($scope) {

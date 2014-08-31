@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html data-ng-app="animalforexApp">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" lang="en">
         <title>Animal Forex | An Animal Crossing: New Leaf trading post</title>
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Coustard" rel="stylesheet" type="text/css">
@@ -9,25 +9,27 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-route.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="/">
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <a href="/">
                 <h1>Animal Forex</h1>
             </a>
             <nav>
                 <ul>
                     <li>
-                        <a href="#">List</a>
+                        <a href="list">List</a>
                     </li>
                     <li>
-                        <a href="#">Offers</a>
+                        <a href="offers">Offers</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <section>
-            <div id="wrapper" ng-view></div>
+            <div id="wrapper" data-ng-view></div>
         </section>
         <footer>
             <p>Copyright &copy; 2014 Maria Chapman.</p>
