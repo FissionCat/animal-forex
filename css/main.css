@@ -2,7 +2,7 @@
 GENERAL
 **************************************/
 
-body, header, section, footer, div, table, h1, p, a {
+body, header, section, footer, nav, div, table, ul, li, h1, p, a {
     margin: 0;
     padding: 0;
 }
@@ -41,6 +41,30 @@ header {
 h1 {
     font-family: 'Coustard', serif;
     padding: 5px 0 15px 0;
+}
+
+
+
+/**************************************
+NAVIGATION
+**************************************/
+
+nav {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 15px 10px;
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 
@@ -93,6 +117,16 @@ header {
 /* Logo text */
 h1 {
     color: #d4c86a;
+}
+
+/* Nav link */
+nav a, nav a:visited {
+    color: #d4c86a;
+}
+
+/* Selected nav link */
+nav a:hover {
+    color: #000;
 }
 
 table {
