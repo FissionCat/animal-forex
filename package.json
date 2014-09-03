@@ -1,9 +1,14 @@
 {
-	"name": "animal-forex",
-	"version": "0.0.1",
-	"main": "server.js",
-	"dependencies": {
-		"express": "~4.8.7"
-	},
-	"private": true
+  "name": "animal-forex",
+  "version": "0.0.1",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.8.7"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "private": true
 }
