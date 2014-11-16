@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "amber",
+        "category": "fossil",
+        "want": true,
+        "have": false,
+        "catalogue": false
+    }, {
+        "id": 2,
+        "name": "ammonite",
+        "category": "fossil",
+        "want": false,
+        "have": true,
+        "catalogue": true
+    }, {
+        "id": 3,
+        "name": "modern wood chair",
+        "category": "furniture",
+        "want": false,
+        "have": false,
+        "catalogue": true
+    }
+]

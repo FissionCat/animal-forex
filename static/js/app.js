@@ -17,16 +17,14 @@
         $locationProvider.html5Mode(true);
     });
 
-    animalforexApp.controller('ItemTableCtrl', ['$scope', function($scope) {
-        $scope.items = [{
-            id: 1,
-            name: 'amber'
-        }, {
-            id: 2,
-            name: 'ammonite'
-        }, {
-            id: 3,
-            name: 'modern wood chair'
-        }];
+    animalforexApp.controller('ItemTableCtrl', ['$http', '$scope', function($http, $scope) {
+        $scope.items = [];
+        $http.get('/inventory.json')
+            .success(function(data) {
+                $scope.items = data;
+            }).error(function(data, status) {
+                // TODO: show an error message
+                console.log('Error', data, status);
+            });
     }]);
 })();
