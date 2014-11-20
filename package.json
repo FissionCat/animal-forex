@@ -5,7 +5,7 @@
   "dependencies": {
     "express": "~4.8.7",
     "pg.js": "~3.6.2",
-    "sql": "~0.40.0"
+    "sql": "~0.41.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
