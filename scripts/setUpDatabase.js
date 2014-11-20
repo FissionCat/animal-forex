@@ -4,13 +4,15 @@ var pg = require('pg.js'),
 
 var userTable = sql.define({
     // user is a reserved word
-    name: 'villager',
+    name: 'users',
     columns: [{
         name: 'id',
-        dataType: 'bigint'
+        dataType: 'bigserial',
+        primaryKey: true
     }, {
         name: 'name',
-        dataType: 'varchar(40)'
+        dataType: 'varchar(40)',
+        notNull: true
     }, {
         name: 'email',
         dataType: 'varchar(255)'
@@ -24,6 +26,27 @@ var userTable = sql.define({
     }, {
         name: 'created_on',
         dataType: 'timestamp'
+    }]
+});
+
+var itemTable = sql.define({
+    name: 'item',
+    columns: [{
+        name: 'id',
+        dataType: 'bigserial',
+        primaryKey: true
+    }]
+});
+
+var inventoryTable = sql.define({
+    name: 'inventory',
+    columns: [{
+        name: 'user_id',
+        dataType: 'bigint',
+        references: {
+            table: 'users',
+            column: 'id'
+        }
     }]
 });
 
