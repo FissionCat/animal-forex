@@ -24,7 +24,7 @@ a {
 
 
 /**************************************
-HEADER
+HEADER + NAVIGATION
 **************************************/
 
 header {
@@ -36,35 +36,40 @@ header {
     border-style: solid;
     border-bottom-left-radius: 130% 170%;
     border-bottom-right-radius: 130% 170%;
+    border-color: $header-border-colour;
+    background: $header-background-colour;
+
+    .title {
+        color: $header-text-colour;
+    }
+
+    nav {
+        margin-bottom: 10px;
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            padding: 15px 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: $header-text-colour;
+
+            &:hover {
+                color: $header-text-hover-colour;
+            }
+        }        
+    }
 }
 
 h1 {
     font-family: $font-family-heading;
     padding: 5px 0 15px 0;
-}
-
-
-
-/**************************************
-NAVIGATION
-**************************************/
-
-nav {
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav a {
-    padding: 15px 10px;
-    font-size: 1.1em;
-    font-weight: 700;
 }
 
 
@@ -94,40 +99,11 @@ footer {
     border-top-left-radius: 130% 170%;
     border-top-right-radius: 130% 170%;
     text-align: center;
+    background: $footer-background-colour;
+    color: $footer-text-colour;
 }
 
 footer p {
     padding: 10px;
     font-size: 0.75em;
 }
-
-
-
-/**************************************
-COLOURS
-**************************************/
-
-/* "Wooden" header */
-header {
-    background: $header-background-colour;
-    border-color: $header-border-colour;
-
-    .title {
-        color: $header-text-colour;
-    }
-
-    nav a {
-        color: $header-text-colour;
-
-        &:hover {
-            color: $header-text-hover-colour;
-        }
-    }
-}
-
-/* copyright footer */
-footer {
-    background: $footer-background-colour;
-    color: $footer-text-colour;
-}
-
