@@ -2,7 +2,7 @@
 GENERAL
 **************************************/
 
-body, header, section, footer, nav, div, table, ul, li, h1, p, a {
+* {
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 #wrapper {
-    max-width: 940px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 5%;
 }
@@ -110,38 +110,25 @@ COLOURS
 
 /* "Wooden" header */
 header {
-    background: #805215;
-    border-color: #553100;
-}
+    background: $raw-umber;
+    border-color: $saddle-brown;
 
-/* Logo text */
-h1 {
-    color: #d4c86a;
-}
+    .title {
+        color: $tacha;
+    }
 
-/* Nav link */
-nav a, nav a:visited {
-    color: #d4c86a;
-}
+    nav a {
+        color: $tacha;
 
-/* Selected nav link */
-nav a:hover {
-    color: #000;
-}
-
-table {
-    background: #749D34;
-    color: #2F4E00;
-}
-
-thead {
-    background: #4F7514;
-    color: #CCEB9D;
+        &:hover {
+            color: $white;
+        }
+    }
 }
 
 /* copyright footer */
 footer {
-    background: #ddd;
-    color: #aaa;
+    background: $alto;
+    color: $silver-chalice;
 }
 
