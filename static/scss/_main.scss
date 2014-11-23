@@ -106,29 +106,28 @@ footer p {
 /**************************************
 COLOURS
 **************************************/
-/* http://paletton.com/#uid=51-0S0kllllaFw0g0qFqFg0w0aF */
 
 /* "Wooden" header */
 header {
-    background: $raw-umber;
-    border-color: $saddle-brown;
+    background: $header-background-colour;
+    border-color: $header-border-colour;
 
     .title {
-        color: $tacha;
+        color: $header-text-colour;
     }
 
     nav a {
-        color: $tacha;
+        color: $header-text-colour;
 
         &:hover {
-            color: $white;
+            color: $header-text-hover-colour;
         }
     }
 }
 
 /* copyright footer */
 footer {
-    background: $alto;
-    color: $silver-chalice;
+    background: $footer-background-colour;
+    color: $footer-text-colour;
 }
 

@@ -8,6 +8,7 @@ $font-family-heading: 'Coustard', serif;
 /**************************************
 COLOURS
 **************************************/
+/* http://paletton.com/#uid=51-0S0kllllaFw0g0qFqFg0w0aF */
 
 /* Greens, light to dark */
 $caper: #CCEB9D;
@@ -36,3 +37,13 @@ $silver-chalice: #AAAAAA;
 
 $black: #000000;
 $white: #FFFFFF;
+
+/* Header colours */
+$header-background-colour: $raw-umber;
+$header-border-colour: $saddle-brown;
+$header-text-colour: $tacha;
+$header-text-hover-colour: $white;
+
+/* Footer colours */
+$footer-background-colour: $alto;
+$footer-text-colour: $silver-chalice;
