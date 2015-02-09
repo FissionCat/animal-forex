@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var app = express();
 
-app.use(express.static(path.join(__dirname, 'static')));
+app.use(express.static(path.join(__dirname, '..', 'static')));
 
 // Re-route page requests to fix refreshing page giving a 404
 app.get('/list', function(req, res, next) {
