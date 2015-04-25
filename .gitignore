@@ -4,3 +4,6 @@ node_modules/*
 # Sass
 .sass-cache/*
 static/css/*
+
+# Config
+config.js
