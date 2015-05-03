@@ -1,12 +1,8 @@
-var fs = require('fs');
 var path = require('path');
 var pg = require('pg.js');
 var sql = require('sql');
 
-var config = JSON.parse(fs.readFileSync(path.join('..', 'config.js'), {encoding: 'utf8'}));
-
-var connectionString = config.database.type + '://' + config.database.username +
-    ':' + config.database.port + '@' + config.database.host + '/' + config.database.name;
+var config = require(path.join(__dirname, '..', 'server', 'config.js'));
 
 var userTable = sql.define({
     // user is a reserved word
@@ -82,7 +78,7 @@ var inventoryTable = sql.define({
     }]
 });
 
-pg.connect(connectionString, function(error, client, done) {
+pg.connect(config.connectionString, function(error, client, done) {
     if (error) {
         console.log('Error fetching client from pool: ', error);
         return;

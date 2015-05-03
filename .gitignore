@@ -6,4 +6,4 @@ node_modules/*
 static/css/*
 
 # Config
-config.js
+config.json
