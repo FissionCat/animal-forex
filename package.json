@@ -1,6 +1,6 @@
 {
   "name": "animal-forex",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "server.js",
   "dependencies": {
     "express": "~4.8.7",
@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.1.3",
     "grunt-concurrent": "^1.0.1",
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",

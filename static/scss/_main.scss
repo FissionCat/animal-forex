@@ -23,8 +23,17 @@ a {
 
 button {
     padding: 5px 10px;
+    border: 0;
+    border-radius: 3px;
     font-family: $font-family-base;
     font-size: 1em;
+    background-color: $button-colour;
+    color: $button-text-colour;
+    outline: none;
+
+    &:active {
+        background-color: $button-colour-active;
+    }
 }
 
 
@@ -81,8 +90,8 @@ header {
 
 .menu-button {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 7px;
+    right: 10px;
 }
 
 

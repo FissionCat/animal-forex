@@ -30,12 +30,25 @@ module.exports = function(grunt) {
                 files: '**/*.scss',
                 tasks: ['sass']
             }
+        },
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src: 'static/**/*.{js,css,html}'
+                },
+                options: {
+                    open: false,
+                    proxy: 'localhost:8080',
+                    watchTask: true
+                }
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-nodemon');
-    grunt.registerTask('default', ['concurrent']);
+    grunt.registerTask('default', ['browserSync', 'concurrent']);
 };
